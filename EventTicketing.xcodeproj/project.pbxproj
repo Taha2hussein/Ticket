@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		2245C5E62EDC688300FE28D7 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 2245C5E52EDC688300FE28D7 /* ParseSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		2245C58B2EDC5EAF00FE28D7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -48,16 +52,6 @@
 			path = EventTicketing;
 			sourceTree = "<group>";
 		};
-		2245C58D2EDC5EAF00FE28D7 /* EventTicketingTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EventTicketingTests;
-			sourceTree = "<group>";
-		};
-		2245C5972EDC5EAF00FE28D7 /* EventTicketingUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = EventTicketingUITests;
-			sourceTree = "<group>";
-		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2245C5E62EDC688300FE28D7 /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,8 +84,6 @@
 			isa = PBXGroup;
 			children = (
 				2245C5732EDC5EAD00FE28D7 /* EventTicketing */,
-				2245C58D2EDC5EAF00FE28D7 /* EventTicketingTests */,
-				2245C5972EDC5EAF00FE28D7 /* EventTicketingUITests */,
 				2245C5722EDC5EAD00FE28D7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -124,8 +117,6 @@
 				2245C5732EDC5EAD00FE28D7 /* EventTicketing */,
 			);
 			name = EventTicketing;
-			packageProductDependencies = (
-			);
 			productName = EventTicketing;
 			productReference = 2245C5712EDC5EAD00FE28D7 /* EventTicketing.app */;
 			productType = "com.apple.product-type.application";
@@ -134,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2245C5A22EDC5EAF00FE28D7 /* Build configuration list for PBXNativeTarget "EventTicketingTests" */;
 			buildPhases = (
+				BB79B5A2B8E1AD3C9F5D5EC3 /* [CP] Check Pods Manifest.lock */,
 				2245C5862EDC5EAF00FE28D7 /* Sources */,
 				2245C5872EDC5EAF00FE28D7 /* Frameworks */,
 				2245C5882EDC5EAF00FE28D7 /* Resources */,
@@ -143,12 +135,7 @@
 			dependencies = (
 				2245C58C2EDC5EAF00FE28D7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2245C58D2EDC5EAF00FE28D7 /* EventTicketingTests */,
-			);
 			name = EventTicketingTests;
-			packageProductDependencies = (
-			);
 			productName = EventTicketingTests;
 			productReference = 2245C58A2EDC5EAF00FE28D7 /* EventTicketingTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
@@ -157,21 +144,18 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2245C5A52EDC5EAF00FE28D7 /* Build configuration list for PBXNativeTarget "EventTicketingUITests" */;
 			buildPhases = (
+				B29421208A5FFC8BAF94FACD /* [CP] Check Pods Manifest.lock */,
 				2245C5902EDC5EAF00FE28D7 /* Sources */,
 				2245C5912EDC5EAF00FE28D7 /* Frameworks */,
 				2245C5922EDC5EAF00FE28D7 /* Resources */,
+				C6D81A35F561938F3CECC29A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				2245C5962EDC5EAF00FE28D7 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				2245C5972EDC5EAF00FE28D7 /* EventTicketingUITests */,
-			);
 			name = EventTicketingUITests;
-			packageProductDependencies = (
-			);
 			productName = EventTicketingUITests;
 			productReference = 2245C5942EDC5EAF00FE28D7 /* EventTicketingUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
@@ -208,6 +192,9 @@
 			);
 			mainGroup = 2245C5682EDC5EAD00FE28D7;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				2245C5E42EDC688300FE28D7 /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 2245C5722EDC5EAD00FE28D7 /* Products */;
 			projectDirPath = "";
@@ -243,6 +230,74 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B29421208A5FFC8BAF94FACD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventTicketing-EventTicketingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB79B5A2B8E1AD3C9F5D5EC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EventTicketingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6D81A35F561938F3CECC29A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventTicketing-EventTicketingUITests/Pods-EventTicketing-EventTicketingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EventTicketing-EventTicketingUITests/Pods-EventTicketing-EventTicketingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EventTicketing-EventTicketingUITests/Pods-EventTicketing-EventTicketingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2245C56D2EDC5EAD00FE28D7 /* Sources */ = {
@@ -294,7 +349,7 @@
 				INFOPLIST_FILE = EventTicketing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -326,7 +381,7 @@
 				INFOPLIST_FILE = EventTicketing/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -591,6 +646,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		2245C5E42EDC688300FE28D7 /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.14.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		2245C5E52EDC688300FE28D7 /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 2245C5E42EDC688300FE28D7 /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 2245C5692EDC5EAD00FE28D7 /* Project object */;
 }
